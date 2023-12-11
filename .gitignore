@@ -396,3 +396,58 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+# Ignore build artifacts
+build/
+*.o
+*.out
+*.exe
+
+# Ignore temporary files
+*.swp
+*~
+
+# Ignore test executables
+test-*
+
+# Ignore test output directories
+Testing/
+
+# Ignore Catch2 generated files
+*.o
+*.obj
+
+# Ignore Google Test generated files
+*.a
+*.lib
+
+# Ignore Visual Studio Code specific files
+.vscode/
+
+# Ignore Xcode specific files
+*.xcodeproj/
+xcuserdata/
+
+# Ignore CMake generated files
+CMakeFiles/
+CMakeScripts/
+CMakeCache.txt
+CMakeSettings.json
+compile_commands.json
+
+# Ignore Makefile generated files
+Makefile
+CMakeLists.txt.user
+
+# Ignore project-specific files
+project-specific-config.ini
+
+# Ignore user-specific files
+user-specific-config.ini
+
+# Ignore local configuration files
+config.local
+
+# Ignore system-specific files
+Thumbs.db
+.DS_Store
