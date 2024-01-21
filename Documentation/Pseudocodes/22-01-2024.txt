@@ -1,0 +1,22 @@
+Funkcja NWD(a, b):
+    Dopóki b != 0:
+        temp = b
+        b = a % b
+        a = temp
+    Zwróć a
+
+
+
+Funkcja wariancja(dane):
+	jeżeli długość(dane) <=1:
+		zwróć "Brak wariancji"
+	
+	średnia = suma(dane) / długość(dane)
+
+	suma_kwadratow_roznic = 0
+	dla każda wartość w dane:
+        	suma_kwadratow_roznic += (wartość - średnia)^2
+
+    	wariancja = suma_kwadratow_roznic / długość(dane)
+
+    	zwróć wariancja
