@@ -31,7 +31,7 @@ def test_divide_zero():
     with pytest.raises(ValueError):
         result = divide(5, 0)
 
-@pytest.mark.skip(reason="Pomijamy")
+#@pytest.mark.skip(reason="Pomijamy")
 @pytest.mark.parametrize("a, b, expectedResult", [[2, 3, 5], [3, 7, 10], [9, 11, 20]])
 def test_ultimate(a, b, expectedResult):
     result = add(a, b)
@@ -47,4 +47,4 @@ def test_area(circle):
     
 def test_perimeter(circle):
     result = circle.perimeter()
-    assert result == 2 * math.pi * 10
+    assert result == 2 * math.pi * circle.radius
